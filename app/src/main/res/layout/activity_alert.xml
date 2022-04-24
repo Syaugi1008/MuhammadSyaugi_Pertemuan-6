@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_alert"
+    tools:ignore="RtlCompat"
+    android:background="@color/teal_200">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/materi_alert"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text1"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/btn_alert1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1E88E5"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/alert_1"
+            android:textColor="@color/design_default_color_background"
+            tools:ignore="ButtonStyle"
+
+            />
+
+        <Button
+            android:id="@+id/btn_alert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1E88E5"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/alert_2"
+            android:textColor="@color/design_default_color_background"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_alert3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1E88E5"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/alert_3"
+            android:textColor="@color/design_default_color_background"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_1"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="#1E88E5"
+            android:text="@string/toast"
+            android:textColor="@color/design_default_color_background"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/durasi"
+            android:textColor="@color/teal_700"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
